@@ -1,241 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechanical Engineering Portfolio</title>
-    <!-- Use the Inter font from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
-        }
-        .section-title {
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 4px;
-            background-color: #3b82f6; /* Blue-500 */
-            border-radius: 9999px;
-        }
-        .portfolio-item:hover .overlay {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamed Malek OUERGEMMI – Portfolio</title>
+  <meta name="description" content="Portfolio of an electromechanical/mechatronics engineer: projects, skills, contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#ffffff; --text:#111827; --muted:#6b7280; --brand:#0ea5e9; --card:#f8fafc; --line:#e5e7eb; --shadow:0 10px 30px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1100px,92%);margin-inline:auto}
+
+    /* Header */
+    header{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{font-weight:800;letter-spacing:.2px}
+    .brand small{font-weight:400;color:var(--muted)}
+    .nav a{padding:.5rem .75rem;border-radius:10px}
+    .nav a:hover{background:var(--card)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:64px 0}
+    .title{font-size:clamp(28px,4vw,46px);line-height:1.1;margin:0 0 12px}
+    .subtitle{color:var(--muted);margin:0 0 24px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{border:1px solid var(--line);background:#fff;padding:10px 14px;border-radius:12px;box-shadow:var(--shadow);transition:transform .15s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .hero-visual{border:1px solid var(--line);background:linear-gradient(180deg,#f8fafc, #fff);border-radius:16px;box-shadow:var(--shadow);padding:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .grid img{border-radius:10px;aspect-ratio:4/3;object-fit:cover}
+
+    /* Section */
+    section{padding:56px 0;border-top:1px solid var(--line)}
+    h2{font-size:clamp(22px,3vw,28px);margin:0 0 20px}
+    p{line-height:1.65}
+
+    /* Skills */
+    .chips{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{border:1px solid var(--line);background:var(--card);padding:8px 12px;border-radius:999px;font-size:14px}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);transition:transform .18s ease, box-shadow .18s ease}
+    .card:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(0,0,0,.08)}
+    .card img{aspect-ratio:16/10;object-fit:cover}
+    .card h3{margin:6px 12px 0;font-size:18px}
+    .card p{margin:0 12px 12px;color:var(--muted);font-size:14px}
+    .card .meta{display:flex;gap:8px;flex-wrap:wrap;margin:0 12px 14px}
+    .meta span{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:4px 8px;border-radius:999px}
+
+    /* Gallery lightbox */
+    .thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding: 0 12px 14px}
+    .thumbs img{border-radius:8px;cursor:pointer;aspect-ratio:1/1;object-fit:cover;transition:transform .15s ease}
+    .thumbs img:hover{transform:scale(1.02)}
+
+    .lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.8);z-index:100}
+    .lightbox.open{display:flex}
+    .lightbox figure{max-width:min(1000px,92%);width:100%}
+    .lightbox img{width:100%;height:auto;border-radius:12px}
+    .lightbox .controls{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+    .lightbox button{border:1px solid #ffffff33;background:transparent;color:#fff;padding:10px 14px;border-radius:12px;cursor:pointer}
+
+    /* Contact */
+    form{display:grid;gap:12px;max-width:640px}
+    input, textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;outline:none}
+    textarea{min-height:120px;resize:vertical}
+
+    /* Footer */
+    footer{padding:28px 0;color:var(--muted);border-top:1px solid var(--line)}
+
+    /* Reveal animation */
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
+    .reveal.visible{opacity:1;transform:none}
+
+    /* Small screens */
+    @media (max-width:860px){
+      .hero{grid-template-columns:1fr;gap:24px}
+    }
+  </style>
 </head>
-<body class="text-gray-800">
-
-    <!-- Main Container -->
-    <div class="container mx-auto px-4 py-12 md:py-20 lg:px-8">
-
-        <!-- Header Section -->
-        <header class="text-center mb-12 md:mb-16">
-            <div class="w-32 h-32 rounded-full mx-auto mb-4 bg-gray-300 overflow-hidden shadow-lg">
-                <!-- Replace with your profile picture. Use a placeholder for now. -->
-                <img src="https://placehold.co/128x128/9ca3af/ffffff?text=MMO" alt="Profile Picture" class="w-full h-full object-cover">
-            </div>
-            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Mohamed Malek Ouerghemmi</h1>
-            <p class="text-lg text-gray-600 mt-2">Electromechanical Engineer (Mechatronics)</p>
-            <div class="flex justify-center items-center space-x-4 mt-4 text-sm">
-                <a href="mailto:ouerghemi.malek@gmail.com" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">
-                    <svg class="h-5 w-5 inline-block mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                    Email
-                </a>
-                <a href="https://linkedin.com/in/mohamed-malek-ouerghemmi/" target="_blank" class="text-gray-600 hover:text-blue-500 transition-colors duration-300">
-                    <svg class="h-5 w-5 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.763s.784-1.763 1.75-1.763 1.75.79 1.75 1.763-.783 1.763-1.75 1.763zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg>
-                    LinkedIn
-                </a>
-            </div>
-        </header>
-
-        <!-- Main Content Grid -->
-        <main class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-            <!-- Skills & Certifications Section (Left Column) -->
-            <section class="md:col-span-1 bg-white p-6 rounded-2xl shadow-lg border border-gray-200 h-fit">
-                <h2 class="section-title text-2xl font-semibold mb-6 text-gray-900">Skills & Certifications</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="font-medium text-lg mb-2">Technical Skills</h3>
-                        <ul class="space-y-1 text-gray-700">
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>CAD & Simulation: SolidWorks (CSWA), Abaqus, Altium Designer, PVSYST</li>
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>Automation & ERP: Siemens PLC (S7-400/1200/1500), TIA Portal, WINCC, PROFINET, SAP S/4HANA</li>
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>Embedded Development: STM32CubeMX, FreeRTOS, ESP32, FPGA, Python, SQL</li>
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>Quality & Methods: PFMEA, APQP, PPAP, QRQC, SPC/MSP</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-lg mb-2">Languages</h3>
-                        <ul class="space-y-1 text-gray-700">
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>Arabic (native)</li>
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>French (TCFQ C1)</li>
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>English (IELTS B2)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-lg mb-2">Certifications</h3>
-                        <ul class="space-y-1 text-gray-700">
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>McKinsey Forward Program (2025)</li>
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>dub.ai Prompting (2025)</li>
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>CSWP (2020)</li>
-                            <li class="flex items-center"><span class="h-2 w-2 bg-blue-500 rounded-full mr-2"></span>Siemens PLC & TIA Portal (2018)</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Experience & Portfolio Section (Right Column) -->
-            <section class="md:col-span-2 space-y-12">
-                
-                <!-- Summary Section -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
-                    <h2 class="section-title text-2xl font-semibold mb-6 text-gray-900">Professional Summary</h2>
-                    <p class="text-gray-700 leading-relaxed">
-                        Electromechanical engineer with over 10 years of experience in the design, industrialization, and maintenance of special machines. I specialize in industrial automation, IoT, and supervision, with advanced expertise in CAD, simulation, embedded development, and quality methods. I am skilled in managing complex technical projects, optimizing industrial processes, and reducing equipment downtime.
-                    </p>
-                </div>
-
-                <!-- Experience Timeline Section -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
-                    <h2 class="section-title text-2xl font-semibold mb-6 text-gray-900">Experience</h2>
-                    <div class="space-y-8">
-                        <!-- Freelance - 3D Design -->
-                        <div class="relative pl-6">
-                            <div class="absolute left-0 top-0 h-full w-1 bg-gray-200 rounded-full"></div>
-                            <div class="absolute left-0 top-0 w-3 h-3 bg-blue-500 rounded-full -ml-1"></div>
-                            <p class="text-sm text-gray-500">2025-01 - Present</p>
-                            <h3 class="font-semibold text-lg text-gray-900">Freelance - 3D Design (CAD)</h3>
-                            <p class="text-sm text-gray-600 mb-2">Designed 3D models and technical drawings using SolidWorks, optimizing prototypes and providing feasibility consultations.</p>
-                        </div>
-                        <!-- Project Manager for Special Machines -->
-                        <div class="relative pl-6">
-                            <div class="absolute left-0 top-0 h-full w-1 bg-gray-200 rounded-full"></div>
-                            <div class="absolute left-0 top-0 w-3 h-3 bg-blue-500 rounded-full -ml-1"></div>
-                            <p class="text-sm text-gray-500">2024-01 - 2024-12</p>
-                            <h3 class="font-semibold text-lg text-gray-900">Project Manager for Special Machines - <span class="text-blue-500">KAIZEN PRO</span></h3>
-                            <p class="text-sm text-gray-600 mb-2">Led design, testing, prototyping, and installation of custom machines, improving performance, reliability, and delivery timelines by 15%.</p>
-                        </div>
-                        <!-- Study and Design Manager -->
-                        <div class="relative pl-6">
-                            <div class="absolute left-0 top-0 h-full w-1 bg-gray-200 rounded-full"></div>
-                            <div class="absolute left-0 top-0 w-3 h-3 bg-blue-500 rounded-full -ml-1"></div>
-                            <p class="text-sm text-gray-500">2020-01 - 2023-12</p>
-                            <h3 class="font-semibold text-lg text-gray-900">Study and Design Manager - <span class="text-blue-500">EVOPRO technologies</span></h3>
-                            <p class="text-sm text-gray-600 mb-2">Developed client-specific machines compliant with ISO standards, overseeing testing, installation, and commissioning of industrial equipment.</p>
-                        </div>
-                        <!-- Industrialization Technician -->
-                        <div class="relative pl-6">
-                            <div class="absolute left-0 top-0 h-full w-1 bg-gray-200 rounded-full"></div>
-                            <div class="absolute left-0 top-0 w-3 h-3 bg-blue-500 rounded-full -ml-1"></div>
-                            <p class="text-sm text-gray-500">2019-05 - 2019-05</p>
-                            <h3 class="font-semibold text-lg text-gray-900">Industrialization Technician - <span class="text-blue-500">EVOPRO technologies</span></h3>
-                            <p class="text-sm text-gray-600 mb-2">Drafted production instructions, process flow charts, and conducted R&R analyses.</p>
-                        </div>
-                        <!-- Machine Reception and Installation -->
-                        <div class="relative pl-6">
-                            <div class="absolute left-0 top-0 h-full w-1 bg-gray-200 rounded-full"></div>
-                            <div class="absolute left-0 top-0 w-3 h-3 bg-blue-500 rounded-full -ml-1"></div>
-                            <p class="text-sm text-gray-500">2019-05 - 2019-05</p>
-                            <h3 class="font-semibold text-lg text-gray-900">Machine Reception and Installation - <span class="text-blue-500">EVOPRO technologies</span></h3>
-                            <p class="text-sm text-gray-600 mb-2">Oversaw installation and commissioning of production machines, ensuring operational compliance.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Section -->
-                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
-                    <h2 class="section-title text-2xl font-semibold mb-6 text-gray-900">Projects Portfolio</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-gallery">
-                        <!-- Portfolio items will be dynamically added here by JavaScript -->
-                    </div>
-                </div>
-
-            </section>
-        </main>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Mohamed Malek OUERGEMMI <small>Electromechanical Engineer</small></div>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- JavaScript for dynamic content -->
-    <script>
-        // Define your portfolio projects as an array of objects
-        const projects = [
-            {
-                title: "3D Printer Frame Design",
-                image: "https://placehold.co/400x300/e5e7eb/6b7280?text=Project+1",
-                description: "Designed a modular 3D printer frame with optimized weight and structural integrity using SolidWorks.",
-                link: "#"
-            },
-            {
-                title: "Automated Sorting System",
-                image: "https://placehold.co/400x300/e5e7eb/6b7280?text=Project+2",
-                description: "Developed and simulated an automated sorting system using PLC and TIA Portal for a manufacturing plant.",
-                link: "#"
-            },
-            {
-                title: "IoT-Based Motor Control",
-                image: "https://placehold.co/400x300/e5e7eb/6b7280?text=Project+3",
-                description: "Created a remote motor control system using an ESP32 microcontroller and a Python-based interface.",
-                link: "#"
-            },
-            {
-                title: "Robotic Arm Prototype",
-                image: "https://placehold.co/400x300/e5e7eb/6b7280?text=Project+4",
-                description: "Prototyped a 3-axis robotic arm for pick-and-place applications, focusing on kinematic analysis and control.",
-                link: "#"
-            },
-            {
-                title: "Custom Assembly Jig Design",
-                image: "https://placehold.co/400x300/e5e7eb/6b7280?text=Project+5",
-                description: "Designed a custom assembly jig in SolidWorks to improve the efficiency and accuracy of a product line, reducing assembly time by 20%.",
-                link: "#"
-            },
-            {
-                title: "FEA Simulation of a Mechanical Part",
-                image: "https://placehold.co/400x300/e5e7eb/6b7280?text=Project+6",
-                description: "Conducted a Finite Element Analysis (FEA) on a mechanical bracket using Abaqus to test its structural integrity under various load conditions.",
-                link: "#"
-            }
-        ];
+  <main>
+    <section class="container hero">
+      <div>
+        <h1 class="title">Designing reliable, elegant <span style="color:var(--brand)">mechatronic</span> systems.</h1>
+        <p class="subtitle">Electromechanical Engineer (Mechatronics) — Industrial automation, CAD/FEA, embedded systems. I build and improve special machines and smart manufacturing solutions.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects ↗</a>
+          <a class="btn" href="#contact">Contact</a>
+          <span class="pill" title="Location">🌍 Tunisia · Open to relocate</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="grid">
+          <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=800&auto=format&fit=crop" alt="PCB and components"/>
+          <img src="https://images.unsplash.com/photo-1581090467392-3d5a4f178c89?q=80&w=800&auto=format&fit=crop" alt="Industrial robot arm"/>
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop" alt="CAD on screen"/>
+          <img src="https://images.unsplash.com/photo-1559333086-40df8a7b0fce?q=80&w=800&auto=format&fit=crop" alt="Workshop"/>
+          <img src="https://images.unsplash.com/photo-1581092334607-25e46a33c3d4?q=80&w=800&auto=format&fit=crop" alt="Sensors"/>
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=800&auto=format&fit=crop" alt="Prototype"/>
+        </div>
+      </div>
+    </section>
 
-        // Function to render portfolio items
-        function renderPortfolio() {
-            const gallery = document.getElementById('portfolio-gallery');
-            projects.forEach(project => {
-                const portfolioItem = document.createElement('div');
-                portfolioItem.classList.add('portfolio-item', 'relative', 'overflow-hidden', 'rounded-xl', 'shadow-md', 'group');
-                
-                portfolioItem.innerHTML = `
-                    <img src="${project.image}" alt="${project.title}" class="w-full h-48 object-cover rounded-xl transition-transform duration-300 transform group-hover:scale-105">
-                    <div class="p-4 bg-gray-50 rounded-b-xl">
-                        <h3 class="font-semibold text-lg text-gray-900">${project.title}</h3>
-                        <p class="text-sm text-gray-600 mt-1">${project.description}</p>
-                    </div>
-                    <a href="${project.link}" target="_blank" class="absolute inset-0 bg-blue-500 bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 overlay">
-                        <span class="text-white font-semibold text-lg">View Project</span>
-                    </a>
-                `;
-                gallery.appendChild(portfolioItem);
-            });
-        }
+    <section id="about">
+      <div class="container reveal">
+        <h2>About</h2>
+        <p>
+          I am a Mechatronics-focused Electromechanical Engineer with 10+ years across design, industrialization and commissioning of special machines. Strong in
+          <strong>SolidWorks/Abaqus</strong>, <strong>Siemens PLC & WINCC</strong>, and <strong>embedded (STM32/FreeRTOS)</strong>. I enjoy turning requirements into robust, manufacturable solutions.
+        </p>
+      </div>
+    </section>
 
-        // Call the function when the page loads
-        window.onload = renderPortfolio;
-    </script>
+    <section id="skills">
+      <div class="container reveal">
+        <h2>Skills</h2>
+        <div class="chips" aria-label="Skills list">
+          <span class="chip">SolidWorks (CSWP)</span>
+          <span class="chip">Abaqus</span>
+          <span class="chip">Siemens PLC · TIA Portal</span>
+          <span class="chip">WINCC</span>
+          <span class="chip">Embedded · STM32 · FreeRTOS</span>
+          <span class="chip">ESP32 · IoT</span>
+          <span class="chip">PFMEA · APQP · PPAP</span>
+          <span class="chip">SAP S/4HANA</span>
+          <span class="chip">Python · C/C++</span>
+        </div>
+      </div>
+    </section>
 
+    <section id="projects">
+      <div class="container reveal">
+        <h2>Projects</h2>
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="card" data-gallery='["https://picsum.photos/id/1011/1200/800","https://picsum.photos/id/1043/1200/800","https://picsum.photos/id/1050/1200/800"]'>
+            <img src="https://picsum.photos/id/1011/800/500" alt="Industrial supervision dashboard" />
+            <h3>Industrial IoT Supervision</h3>
+            <p>ESP32 + Node-RED with automated alerts and dashboards; -20% breakdowns, OEE +15%.</p>
+            <div class="meta"><span>IoT</span><span>Dashboard</span><span>ESP32</span></div>
+            <div class="thumbs"></div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card" data-gallery='["https://picsum.photos/id/1025/1200/800","https://picsum.photos/id/1020/1200/800","https://picsum.photos/id/1024/1200/800"]'>
+            <img src="https://picsum.photos/id/1025/800/500" alt="PCB design" />
+            <h3>Embedded Measurement Module</h3>
+            <p>STM32 + FreeRTOS firmware (UART/I2C) for real-time measurements; validated in production.</p>
+            <div class="meta"><span>STM32</span><span>FreeRTOS</span><span>UART/I2C</span></div>
+            <div class="thumbs"></div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card" data-gallery='["https://picsum.photos/id/1039/1200/800","https://picsum.photos/id/1033/1200/800","https://picsum.photos/id/1037/1200/800"]'>
+            <img src="https://picsum.photos/id/1039/800/500" alt="Solar simulation" />
+            <h3>PV Sizing Study</h3>
+            <p>PVSYST simulations to size installations; -15% energy consumption for clients.</p>
+            <div class="meta"><span>PVSYST</span><span>Energy</span><span>Study</span></div>
+            <div class="thumbs"></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Lightbox modal -->
+      <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" id="lightbox">
+        <figure>
+          <img src="" alt="Project image" id="lightbox-img" />
+          <div class="controls">
+            <button id="prev" aria-label="Previous image">◀ Prev</button>
+            <button id="next" aria-label="Next image">Next ▶</button>
+            <button id="close" aria-label="Close viewer">✕ Close</button>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container reveal">
+        <h2>Contact</h2>
+        <p>Interested in collaborating or hiring? Email me at <a href="mailto:ouerghemi.malek@gmail.com">ouerghemi.malek@gmail.com</a> or use the form below.</p>
+        <form name="contact" onsubmit="event.preventDefault(); alert('Thanks! Replace this with your form handler (e.g., Formspree).'); this.reset();">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Mohamed Malek OUERGEMMI · Built with vanilla HTML/CSS/JS</div>
+  </footer>
+
+  <script>
+    // Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Intersection Observer for reveal animations
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+      })
+    },{threshold:.2});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Build gallery thumbnails from data-gallery
+    document.querySelectorAll('.card').forEach(card=>{
+      const thumbs = card.querySelector('.thumbs');
+      const gallery = JSON.parse(card.getAttribute('data-gallery'));
+      gallery.slice(0,3).forEach((src,i)=>{
+        const im = new Image(); im.src = src; im.alt = card.querySelector('h3').textContent + ' image ' + (i+1);
+        im.addEventListener('click', ()=> openLightbox(gallery, i));
+        thumbs.appendChild(im);
+      });
+    });
+
+    // Simple lightbox with keyboard navigation
+    const lightbox = document.getElementById('lightbox');
+    const lightImg = document.getElementById('lightbox-img');
+    let currentGallery = []; let currentIndex = 0;
+
+    function openLightbox(gal, idx){
+      currentGallery = gal; currentIndex = idx;
+      lightImg.src = gal[idx];
+      lightbox.classList.add('open');
+      document.body.style.overflow='hidden';
+    }
+    function closeLightbox(){
+      lightbox.classList.remove('open');
+      document.body.style.overflow='';
+    }
+    function next(){ currentIndex = (currentIndex+1)%currentGallery.length; lightImg.src=currentGallery[currentIndex]; }
+    function prev(){ currentIndex = (currentIndex-1+currentGallery.length)%currentGallery.length; lightImg.src=currentGallery[currentIndex]; }
+
+    document.getElementById('close').onclick = closeLightbox;
+    document.getElementById('next').onclick = next;
+    document.getElementById('prev').onclick = prev;
+    lightbox.addEventListener('click', (e)=>{ if(e.target===lightbox) closeLightbox(); });
+    window.addEventListener('keydown', (e)=>{
+      if(!lightbox.classList.contains('open')) return;
+      if(e.key==='Escape') closeLightbox();
+      if(e.key==='ArrowRight') next();
+      if(e.key==='ArrowLeft') prev();
+    });
+  </script>
 </body>
 </html>
