@@ -1,0 +1,6 @@
+body { margin:0; font-family: Arial, sans-serif; background:#f8fafc; color:#0f172a;}
+.navbar {display:flex;justify-content:space-between;padding:1rem;background:white;position:sticky;top:0;z-index:50;border-bottom:1px solid #ddd;}
+.btn{padding:0.5rem 1rem;border-radius:8px;background:#2563eb;color:white;margin-right:0.5rem;display:inline-block;}
+.btn.outline{background:transparent;border:1px solid #2563eb;color:#2563eb;}
+.card{background:white;padding:1rem;border-radius:12px;box-shadow:0 2px 4px rgba(0,0,0,0.1);margin:0.5rem 0;}
+section{padding:2rem;}

@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "Ing\u00e9nieur \u00c9lectrom\u00e9canique",
+    "subtitle": "Machines sp\u00e9ciales et IoT industriel",
+    "ctaCv": "T\u00e9l\u00e9charger le CV",
+    "ctaProjects": "Voir les projets"
+  },
+  "timeline": {
+    "title": "Parcours"
+  },
+  "map": {
+    "title": "Carte des Projets"
+  },
+  "contact": {
+    "title": "Contact"
+  }
+}

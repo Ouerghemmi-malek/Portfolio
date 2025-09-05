@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "title": "Electromechanical Engineer",
+    "subtitle": "Special-purpose machines and Industrial IoT",
+    "ctaCv": "Download CV",
+    "ctaProjects": "View Projects"
+  },
+  "timeline": {
+    "title": "Experience Timeline"
+  },
+  "map": {
+    "title": "Projects Map"
+  },
+  "contact": {
+    "title": "Contact"
+  }
+}
