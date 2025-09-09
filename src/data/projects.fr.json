@@ -1,0 +1,155 @@
+[
+  {
+    "title": "Système de Supervision IoT Industrielle",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464476/hero_g5gw42.png",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464481/img1_f9iz2r.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464487/img2_sazuqy.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464492/img3_ijuai8.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464498/img4_dcuzug.jpg"
+    ],
+    "short": "Système IoT pour supervision industrielle en temps réel.",
+    "problem": "Arrêts machines fréquents sans suivi en temps réel.",
+    "solution": "Développement d’un système IoT avec ESP32, Node-RED, InfluxDB et tableaux de bord Grafana.",
+    "result": "Réduction de 20% des arrêts et meilleure fiabilité.",
+    "problem_long": "Les machines subissaient des arrêts fréquents sans visibilité en temps réel ni maintenance prédictive. Les opérateurs manquaient de données.",
+    "solution_long": "Conception d’un système IoT économique basé sur ESP32, Node-RED, InfluxDB et Grafana. Tableaux de bord interactifs avec KPI OEE et alertes.",
+    "result_long": "Réduction de 20% des arrêts, amélioration du contrôle qualité et renforcement de la sécurité. ROI rapide grâce à la baisse des non-conformités."
+  },
+  {
+    "title": "Machine de Contrôle Joints Toriques",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464648/hero_lr7h3r.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464655/img1_n8gizs.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464662/img2_n0axn0.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464668/img3_jcij1e.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464675/img4_irmeqp.jpg"
+    ],
+    "short": "Machine automatisée pour détection de joints toriques.",
+    "problem": "Le contrôle manuel était peu fiable et source d’erreurs.",
+    "solution": "Conception et simulation d’une machine automatisée sous SolidWorks pour la détection des joints manquants ou mal positionnés.",
+    "result": "0% de défauts expédiés et suppression des erreurs humaines.",
+    "problem_long": "Le contrôle des joints reposait sur l’opérateur, ce qui entraînait des défauts non détectés et des réclamations clients.",
+    "solution_long": "Développement d’une machine automatisée en 3D sous SolidWorks. Animation fonctionnelle réalisée pour validation.",
+    "result_long": "Élimination des défauts, amélioration du contrôle qualité et réduction des coûts de retouche."
+  },
+  {
+    "title": "Ligne d’Étuvage Couvercles Plastiques",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464581/hero_wc2qld.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464587/img1_p8iira.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464594/img2_vh8sc9.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464601/img3_e2kkjb.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464607/img4_emwltv.jpg"
+    ],
+    "short": "Ligne d’étuvage adaptée pour couvercles plastiques.",
+    "problem": "Le four existant n’était pas adapté aux besoins client.",
+    "solution": "Conception thermique et mécanique sous SolidWorks, installation validée sur site.",
+    "result": "Gain de 15% de productivité et meilleure qualité.",
+    "problem_long": "Le four client ne respectait pas les spécifications des couvercles plastiques, entraînant défauts et cycles perdus.",
+    "solution_long": "Étude de faisabilité, adaptation complète en 3D sous SolidWorks et supervision de l’installation.",
+    "result_long": "Gain de rendement de 15%, meilleure homogénéité des couvercles et réduction de la consommation énergétique."
+  },
+  {
+    "title": "Magasin Pièces de Rechange",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464683/hero_yglpps.png",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464689/img1_voyfec.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464696/img2_gl6xdv.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464703/img3_q9kj6v.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464710/img4_ehgzn4.png"
+    ],
+    "short": "Optimisation 3D d’un magasin de pièces de rechange.",
+    "problem": "Espace mal exploité et circulation inefficace.",
+    "solution": "Modélisation 3D et optimisation des zones fonctionnelles.",
+    "result": "20% de gain d’espace et meilleure logistique.",
+    "problem_long": "Le magasin était désorganisé, avec perte d’espace et difficultés de circulation.",
+    "solution_long": "Refonte complète avec modélisation 3D, création de zones fonctionnelles et cheminements optimisés.",
+    "result_long": "Gain de 20% d’espace, ergonomie accrue et meilleure fluidité logistique."
+  },
+  {
+    "title": "Simulation Salle Compresseurs",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464717/hero_gy5u61.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464724/img1_oljggg.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464731/img2_qj5bau.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464738/img3_yu5jcc.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464745/img4_ezal9j.jpg"
+    ],
+    "short": "Simulation 3D d’une salle compresseurs complète.",
+    "problem": "Pas de visualisation avant travaux, erreurs fréquentes.",
+    "solution": "Création d’une simulation 3D avec intégration équipements et réseaux.",
+    "result": "Erreurs évitées et planification facilitée.",
+    "problem_long": "Sans visualisation 3D, le risque d’erreurs d’implantation et de coûts supplémentaires était élevé.",
+    "solution_long": "Simulation complète en 3D via SketchUp/AutoCAD intégrant compresseurs et tuyauteries.",
+    "result_long": "Planification sécurisée, suppression des erreurs et gain de temps dans les travaux."
+  },
+  {
+    "title": "Machine de Test Soudure Plastique",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464614/hero_hvhip8.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464621/img1_z0zqc4.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464628/img2_r0jnly.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464634/img3_f00hq7.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464641/img4_getjj8.jpg"
+    ],
+    "short": "Machine hydraulique de test de soudure plastique.",
+    "problem": "Défauts de soudure non détectés, taux de rebuts élevé.",
+    "solution": "Conception d’une machine hydraulique de test SolidWorks avec mesure en Newtons.",
+    "result": "Réduction de 25% des rebuts et traçabilité totale.",
+    "problem_long": "Les soudures plastiques n’étaient pas testées de manière fiable, entraînant des défauts sur pièces automobiles.",
+    "solution_long": "Conception et dimensionnement d’une machine de test hydraulique SolidWorks, intégrant la mesure d’effort.",
+    "result_long": "Traçabilité complète, réduction de 25% des rebuts et conformité client assurée."
+  },
+  {
+    "title": "Solution Fixation Couvercle Plastique",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464547/hero_ldn8rf.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464553/img1_qxsmmc.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464560/img2_woznc9.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464566/img3_j0346l.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464573/img4_pclfqh.jpg"
+    ],
+    "short": "Dispositif ergonomique pour fixation de couvercles.",
+    "problem": "Fixation difficile et manque de précision.",
+    "solution": "Création d’un dispositif ergonomique et robuste sous SolidWorks.",
+    "result": "Fixation plus rapide, sécurisée et précise.",
+    "problem_long": "Les opérateurs peinaient à fixer les couvercles sur gabarits machines, ralentissant les cycles.",
+    "solution_long": "Étude des alternatives et conception d’un dispositif ergonomique en 3D. Tests et validation supervisés.",
+    "result_long": "Gain de sécurité, réduction des temps de cycle et précision accrue."
+  },
+  {
+    "title": "Système Porte Coulissante",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407035/hero_gfhoyn.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407035/img1_fvplxh.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407036/img2_sfsxwd.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407036/img3_yybfhu.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407037/img4_gqzzxt.jpg"
+    ],
+    "short": "Système porte coulissante sur mesure pour atelier.",
+    "problem": "Portes battantes encombrantes et perte d’espace.",
+    "solution": "Conception et installation d’un système porte coulissante sous SolidWorks.",
+    "result": "30% d’espace libéré et circulation optimisée.",
+    "problem_long": "Les portes classiques encombraient l’atelier et gênaient la circulation des opérateurs.",
+    "solution_long": "Étude technique, conception sous SolidWorks et supervision fabrication/installation d’une porte coulissante.",
+    "result_long": "Libération de 30% d’espace, meilleure ergonomie et productivité renforcée."
+  },
+  {
+    "title": "Machine de Décomposition Filtres Huile Métalliques",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406859/hero_u4xozz.png",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406858/img1_glzmqi.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406858/img2_tgvgsr.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406858/img3_kr0b9p.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406858/img4_fwuyjo.png"
+    ],
+    "short": "Machine pour décomposition rapide de filtres métalliques.",
+    "problem": "Le démontage manuel était lent, risqué et inefficace.",
+    "solution": "Conception d’une machine dédiée sous SolidWorks avec animation fonctionnelle.",
+    "result": "Procédé plus sûr et 50% plus rapide.",
+    "problem_long": "Le démontage manuel des filtres métalliques prenait du temps et exposait les opérateurs à des risques de sécurité.",
+    "solution_long": "Conception et développement d’une machine robuste de décomposition sous SolidWorks, validée par animation fonctionnelle.",
+    "result_long": "Réduction de 50% du temps de traitement, sécurité renforcée et processus reproductible."
+  }
+]

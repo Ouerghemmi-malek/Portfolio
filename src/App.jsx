@@ -6,6 +6,8 @@ import Timeline from './components/Timeline.jsx'
 import Map from './components/Map.jsx'
 import Footer from './components/Footer.jsx'
 import { translations } from './i18n.js'
+import Contact from "./components/Contact";
+
 
 export default function App(){
   const [lang,setLang]=useState('en')
@@ -17,6 +19,7 @@ export default function App(){
       <Projects t={t} lang={lang}/>
       <Timeline t={t}/>
       <Map t={t}/>
+      <Contact />
       <Footer/>
     </div>
   )

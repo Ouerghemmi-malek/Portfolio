@@ -1,12 +1,23 @@
-import React from 'react'
-export default function Navbar({lang,setLang}){
-  return(
+import React from "react";
+import { useLanguage } from "../context/LanguageContext";
+
+export default function Navbar() {
+  const { lang, setLang } = useLanguage();
+
+  return (
     <nav className="navbar">
-      <div><strong>Malek Ouerghemmi</strong></div>
       <div>
-        <button onClick={()=>setLang('en')}>EN</button>
-        <button onClick={()=>setLang('fr')}>FR</button>
+        <a href="#projects">{lang === "en" ? "Projects" : "Projets"}</a>
+        <a href="#timeline">{lang === "en" ? "Timeline" : "Parcours"}</a>
+        <a href="#contact">{lang === "en" ? "Contact" : "Contact"}</a>
       </div>
+
+      <button
+        className="btn outline"
+        onClick={() => setLang(lang === "en" ? "fr" : "en")}
+      >
+        {lang === "en" ? "FR" : "EN"}
+      </button>
     </nav>
-  )
+  );
 }

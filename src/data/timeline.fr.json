@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2025-01 – Présent",
+    "title": "Freelance – Conception 3D (CAD)",
+    "location": "Ariana / Remote",
+    "description": "Conception de modèles 3D et plans techniques sous SolidWorks, optimisation de prototypes et conseils en faisabilité."
+  },
+  {
+    "date": "2024-01 – 2024-12",
+    "title": "Responsable Projets Machines Spéciales",
+    "location": "KAIZEN PRO, Ben Arous, Tunisie",
+    "description": "Conception de machines sur mesure (essais, prototypage, installation) avec optimisation de la performance, fiabilité et délais."
+  },
+  {
+    "date": "2020-01 – 2023-12",
+    "title": "Responsable étude et conception Machines Spéciales",
+    "location": "EVOPRO Technologies, Ben Arous, Tunisie",
+    "description": "Conception de machines spécifiques selon les besoins clients et normes, essais, installation et mise en service d’équipements industriels."
+  },
+  {
+    "date": "2013-09 – 2019-12",
+    "title": "Technicien Industrialisation",
+    "location": "SOFIMA Filtres Tunisie, Ben Arous, Tunisie",
+    "description": "Supervision opérations, gestion équipes & lignes, application des standards qualité IATF 16949, optimisation cycles production : gain de 12 %."
+  },
+  {
+    "date": "2013-01 – 2013-06",
+    "title": "Responsable maintenance préventive parc roulant",
+    "location": "Société Bouzguenda Frères, Ben Arous, Tunisie",
+    "description": "Gestion maintenance préventive du parc et flotte automobile."
+  },
+  {
+    "date": "2011-01 – 2011-12",
+    "title": "Monteur de structures d’aéronefs",
+    "location": "AEROLIA Tunisie, M’Ghira",
+    "description": "Montage et ajustement des éléments de structure aéronefs conformément aux standards aéronautiques."
+  }
+]

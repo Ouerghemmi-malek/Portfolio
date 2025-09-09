@@ -1,0 +1,155 @@
+[
+  {
+    "title": "Industrial IoT Supervision System",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464476/hero_g5gw42.png",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464481/img1_f9iz2r.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464487/img2_sazuqy.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464492/img3_ijuai8.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464498/img4_dcuzug.jpg"
+    ],
+    "short": "IoT-based system for real-time industrial supervision.",
+    "problem": "Frequent machine downtime without monitoring.",
+    "solution": "Developed IoT system with ESP32, Node-RED, InfluxDB and Grafana dashboards.",
+    "result": "20% reduction in downtime and improved reliability.",
+    "problem_long": "Machines were facing frequent stoppages with no real-time monitoring or predictive insights. Operators had limited visibility on performance.",
+    "solution_long": "Engineered a low-cost IoT supervision system using ESP32 gateways, Node-RED, InfluxDB, Grafana and MQTT. Delivered interactive dashboards with OEE KPIs and alerts.",
+    "result_long": "Achieved a 20% reduction in downtime, enhanced quality control, and improved operator safety. ROI realized quickly through reduced non-conformities."
+  },
+  {
+    "title": "O-Ring Inspection Machine",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464648/hero_lr7h3r.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464655/img1_n8gizs.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464662/img2_n0axn0.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464668/img3_jcij1e.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464675/img4_irmeqp.jpg"
+    ],
+    "short": "Automated machine for O-ring presence detection.",
+    "problem": "Manual O-ring inspection was unreliable and error-prone.",
+    "solution": "Designed and simulated a SolidWorks machine for automated detection of missing or misaligned O-rings.",
+    "result": "Zero defective parts shipped, human error eliminated.",
+    "problem_long": "O-rings were manually checked, leading to missed defects and increased customer complaints.",
+    "solution_long": "Developed an automated O-ring inspection machine in SolidWorks. Included functional 3D animation for validation.",
+    "result_long": "Eliminated customer defects, improved quality assurance and reduced rework costs."
+  },
+  {
+    "title": "Plastic Lid Curing Line",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464581/hero_wc2qld.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464587/img1_p8iira.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464594/img2_vh8sc9.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464601/img3_e2kkjb.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464607/img4_emwltv.jpg"
+    ],
+    "short": "Customized curing line for plastic lids.",
+    "problem": "Existing oven was not adapted to client requirements.",
+    "solution": "Designed and built a thermal and mechanical adaptation in SolidWorks, validated onsite.",
+    "result": "15% productivity gain and improved lid quality.",
+    "problem_long": "The client's curing oven was unsuitable for specific plastic lid requirements, leading to defects and wasted cycles.",
+    "solution_long": "Performed feasibility study, redesigned the oven and line using SolidWorks, and supervised installation at client site.",
+    "result_long": "Delivered a 15% increase in throughput, improved lid consistency and reduced energy waste."
+  },
+  {
+    "title": "Spare Parts Store Layout",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464683/hero_yglpps.png",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464689/img1_voyfec.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464696/img2_gl6xdv.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464703/img3_q9kj6v.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464710/img4_ehgzn4.png"
+    ],
+    "short": "3D optimized layout for spare parts warehouse.",
+    "problem": "Storage space was poorly organized and underutilized.",
+    "solution": "Modeled the warehouse in 3D and optimized functional zones for flow and ergonomics.",
+    "result": "20% space gain and improved logistics.",
+    "problem_long": "The warehouse suffered from poor layout, leading to wasted space and inefficient operator movement.",
+    "solution_long": "Redesigned the warehouse with 3D functional zoning and circulation paths. Delivered realistic renders for approval.",
+    "result_long": "Achieved a 20% gain in space, better ergonomics and smoother logistics management."
+  },
+  {
+    "title": "Compressor Room Simulation",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464717/hero_gy5u61.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464724/img1_oljggg.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464731/img2_qj5bau.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464738/img3_yu5jcc.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464745/img4_ezal9j.jpg"
+    ],
+    "short": "3D simulation of compressor room layout.",
+    "problem": "Lack of visualization before installation caused errors.",
+    "solution": "Created a 3D simulation of the compressor room with piping and equipment integration.",
+    "result": "Prevented layout errors and improved planning.",
+    "problem_long": "The client had no visualization of compressor installations, leading to costly mistakes.",
+    "solution_long": "Simulated the entire compressor room in SketchUp/AutoCAD, integrating equipment and piping networks.",
+    "result_long": "Facilitated planning, improved accuracy, and avoided misplacement errors."
+  },
+  {
+    "title": "Plastic Welding Test Machine",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464614/hero_hvhip8.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464621/img1_z0zqc4.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464628/img2_r0jnly.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464634/img3_f00hq7.png",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464641/img4_getjj8.jpg"
+    ],
+    "short": "Hydraulic machine for plastic weld testing.",
+    "problem": "Undetected weld defects increased rejects.",
+    "solution": "Designed hydraulic test machine in SolidWorks to measure weld strength in Newtons.",
+    "result": "25% reduction in scrap and full traceability.",
+    "problem_long": "Plastic welds in automotive filters were not reliably tested, leading to undetected weak welds.",
+    "solution_long": "Conceived and dimensioned a hydraulic testing machine in SolidWorks. Integrated force measurement for traceability.",
+    "result_long": "Achieved 100% traceability, reduced scrap by 25%, and ensured compliance with client requirements."
+  },
+  {
+    "title": "Plastic Lid Fixation System",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464547/hero_ldn8rf.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464553/img1_qxsmmc.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464560/img2_woznc9.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464566/img3_j0346l.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1756464573/img4_pclfqh.jpg"
+    ],
+    "short": "Custom fixture for plastic lid fixation.",
+    "problem": "Fixation of lids on machine jigs was difficult and imprecise.",
+    "solution": "Developed ergonomic and robust fixture designed in SolidWorks, tested and validated.",
+    "result": "Safer, faster and more precise assembly.",
+    "problem_long": "Operators struggled to attach lids to machine jigs, reducing safety and efficiency.",
+    "solution_long": "Researched alternatives and created a 3D-printed prototype fixture in SolidWorks. Supervised testing and validation.",
+    "result_long": "Delivered an ergonomic solution that improved safety, reduced cycle time and increased precision."
+  },
+  {
+    "title": "Sliding Door System",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407035/hero_gfhoyn.jpg",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407035/img1_fvplxh.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407036/img2_sfsxwd.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407036/img3_yybfhu.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757407037/img4_gqzzxt.jpg"
+    ],
+    "short": "Custom sliding door system to optimize space.",
+    "problem": "Hinged doors wasted space and blocked circulation.",
+    "solution": "Designed and installed sliding door system in SolidWorks with supervised fabrication.",
+    "result": "Freed 30% of usable space and improved ergonomics.",
+    "problem_long": "The client’s workshop faced severe space constraints due to hinged doors obstructing circulation.",
+    "solution_long": "Conducted feasibility study, then designed and implemented a sliding door system in SolidWorks. Supervised fabrication and installation.",
+    "result_long": "Achieved 30% more usable space, improved safety and increased operator productivity."
+  },
+  {
+    "title": "Oil Filter Decomposition Machine",
+    "hero": "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406859/hero_u4xozz.png",
+    "images": [
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406858/img1_glzmqi.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406858/img2_tgvgsr.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406858/img3_kr0b9p.jpg",
+      "https://res.cloudinary.com/dcity9zdj/image/upload/v1757406858/img4_fwuyjo.png"
+    ],
+    "short": "Machine for safe and fast decomposition of oil filters.",
+    "problem": "Manual disassembly was unsafe, slow and inconsistent.",
+    "solution": "Designed a dedicated decomposition machine in SolidWorks with functional animation.",
+    "result": "Reduced processing time and improved operator safety.",
+    "problem_long": "Metallic oil filters were decomposed manually with hand tools, leading to slow processes and operator safety risks.",
+    "solution_long": "Developed a custom decomposition machine in SolidWorks. Integrated robust mechanisms and validated with functional animation.",
+    "result_long": "Achieved 50% faster decomposition, increased operator safety, and ensured repeatable reliable process."
+  }
+]
